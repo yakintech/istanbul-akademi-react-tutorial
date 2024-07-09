@@ -11,12 +11,14 @@ import ArraySample from "./stateSamples/ArraySample"
 import ArraySample2 from "./stateSamples/ArraySample2"
 import BooleanSample from "./stateSamples/BooleanSample"
 import ImageStateSample from "./stateSamples/ImageStateSample"
+import StyleStateSample from "./stateSamples/StyleStateSample"
+import StyleStateSample2 from "./stateSamples/StyleStateSample2"
 
 
 function App() {
 
 
-  return <ImageStateSample/>
+  return <StyleStateSample2/>
   
   return <>
   <ul style={{display:'flex', justifyContent:"space-evenly"}}>
