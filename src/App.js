@@ -16,6 +16,7 @@ import StyleStateSample2 from "./stateSamples/StyleStateSample2"
 import Suppliers from "./pages/Suppliers"
 import Users from "./pages/Users"
 import Todos from "./pages/Todos"
+import AddProduct from "./pages/AddProduct"
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
     <Link to='/suppliers'>Suppliers</Link>
     <Link to='/users'>Users</Link>
     <Link to='/todos'>Todos</Link>
+    <Link to='/add-product'>Add Product</Link>
   </ul>
 
     <Routes>
@@ -42,6 +44,7 @@ function App() {
       <Route path="/suppliers" element={<Suppliers/>}/>
       <Route path="/users" element={<Users/>} />
       <Route path="/todos" element={<Todos/>} />
+      <Route path="/add-product" element={<AddProduct/>}/>
       <Route path="*" element={<NotFound/>} />
     </Routes>
 
