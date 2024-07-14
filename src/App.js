@@ -17,6 +17,7 @@ import Suppliers from "./pages/Suppliers"
 import Users from "./pages/Users"
 import Todos from "./pages/Todos"
 import AddProduct from "./pages/AddProduct"
+import OrdersPage from "./pages/OrdersPage"
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
     <Link to='/users'>Users</Link>
     <Link to='/todos'>Todos</Link>
     <Link to='/add-product'>Add Product</Link>
+    <Link to='/orders'>Orders</Link>
   </ul>
 
     <Routes>
@@ -45,6 +47,7 @@ function App() {
       <Route path="/users" element={<Users/>} />
       <Route path="/todos" element={<Todos/>} />
       <Route path="/add-product" element={<AddProduct/>}/>
+      <Route path="/orders" element={<OrdersPage/>} />
       <Route path="*" element={<NotFound/>} />
     </Routes>
 
