@@ -5,19 +5,16 @@ import HomePage from "./pages/HomePage"
 import { Link, Route, Routes } from "react-router-dom"
 import ProductsPage from "./pages/ProductsPage"
 import ProfilePage from "./pages/ProfilePage"
-import StateIntro from "./stateSamples/StateIntro"
-import CounterSample from "./stateSamples/CounterSample"
-import ArraySample from "./stateSamples/ArraySample"
-import ArraySample2 from "./stateSamples/ArraySample2"
-import BooleanSample from "./stateSamples/BooleanSample"
-import ImageStateSample from "./stateSamples/ImageStateSample"
-import StyleStateSample from "./stateSamples/StyleStateSample"
-import StyleStateSample2 from "./stateSamples/StyleStateSample2"
 import Suppliers from "./pages/Suppliers"
 import Users from "./pages/Users"
 import Todos from "./pages/Todos"
 import AddProduct from "./pages/AddProduct"
 import OrdersPage from "./pages/OrdersPage"
+import List from "./pages/suppliers/List"
+import Add from "./pages/suppliers/Add"
+import Update from "./pages/suppliers/Update"
+import Detail from './pages/suppliers/Detail'
+// import Detail from "./components/Detail"
 
 
 function App() {
@@ -26,7 +23,8 @@ function App() {
   return <>
   <ul style={{display:'flex', justifyContent:"space-evenly"}}>
     <Link to='/'>Home</Link>
-    <Link to='/about'>About</Link>
+    <Link to='/suppliers'>Suppliers</Link>
+    {/* <Link to='/about'>About</Link>
     <Link to='/contact'>Contact</Link>
     <Link to='/products'>Products</Link>
     <Link to='/profile'>Profile</Link>
@@ -34,7 +32,7 @@ function App() {
     <Link to='/users'>Users</Link>
     <Link to='/todos'>Todos</Link>
     <Link to='/add-product'>Add Product</Link>
-    <Link to='/orders'>Orders</Link>
+    <Link to='/orders'>Orders</Link> */}
   </ul>
 
     <Routes>
@@ -43,11 +41,20 @@ function App() {
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/products" element={<ProductsPage/>} />
       <Route path="/profile" element={<ProfilePage/>} />
-      <Route path="/suppliers" element={<Suppliers/>}/>
+      {/* <Route path="/suppliers" element={<Suppliers/>}/> */}
       <Route path="/users" element={<Users/>} />
       <Route path="/todos" element={<Todos/>} />
       <Route path="/add-product" element={<AddProduct/>}/>
       <Route path="/orders" element={<OrdersPage/>} />
+
+      {/* Suppliers routes */}
+      <Route path="/suppliers" element={<List/>}/>
+      <Route path="/suppliers/add" element={<Add/>}/>
+      <Route path="/suppliers/update/:id" element={<Update/>}/>
+      <Route path="/suppliers/detail/:id" element={<Detail/>}/>
+
+
+
       <Route path="*" element={<NotFound/>} />
     </Routes>
 

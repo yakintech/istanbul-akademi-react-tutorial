@@ -16,6 +16,7 @@ function OrdersPage() {
                 setorders(res.data)
                 setloading(false)
             })
+            
     }
 
     const deleteOrder = (id) => {
