@@ -14,10 +14,17 @@ import List from "./pages/suppliers/List"
 import Add from "./pages/suppliers/Add"
 import Update from "./pages/suppliers/Update"
 import Detail from './pages/suppliers/Detail'
+import GridSample from "./muiSample/GridSample"
+import StackSample from "./muiSample/StackSample"
+import AddProductMUI from "./muiSample/AddProductMUI"
+import ProductsDataGrid from "./muiSample/ProductsDataGrid"
 // import Detail from "./components/Detail"
 
 
 function App() {
+
+
+  return <ProductsDataGrid/>
 
 
   return <>
