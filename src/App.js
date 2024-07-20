@@ -18,13 +18,16 @@ import GridSample from "./muiSample/GridSample"
 import StackSample from "./muiSample/StackSample"
 import AddProductMUI from "./muiSample/AddProductMUI"
 import ProductsDataGrid from "./muiSample/ProductsDataGrid"
+import AddSupplierMUI from "./muiSample/AddSupplierMUI"
+import CustomerDataGrid from "./muiSample/CustomerDataGrid"
+import AddCustomer from "./muiSample/AddCustomer"
 // import Detail from "./components/Detail"
 
 
 function App() {
 
 
-  return <ProductsDataGrid/>
+  return <AddCustomer/>
 
 
   return <>
