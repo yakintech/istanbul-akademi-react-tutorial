@@ -4,14 +4,18 @@ import App from './App'
 import { BrowserRouter } from 'react-router-dom';
 import './style.css'
 import { SnackbarProvider } from 'notistack';
+import { FavoritesProvider } from './context/FavoritesContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <BrowserRouter>
-    <SnackbarProvider>
-      <App />
-    </SnackbarProvider>
+    <FavoritesProvider>
+      <SnackbarProvider>
+        <App />
+      </SnackbarProvider>
+    </FavoritesProvider>
+
   </BrowserRouter>
 
 );
