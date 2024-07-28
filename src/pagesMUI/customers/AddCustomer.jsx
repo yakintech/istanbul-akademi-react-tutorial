@@ -4,7 +4,11 @@ import { useNavigate } from 'react-router-dom'
 
 function AddCustomer() {
 
-    const [formData, setformData] = useState({})
+    const [formData, setformData] = useState({
+        companyName: "",
+        contactName: "",
+        contactTitle: ""
+    })
 
     const navigate = useNavigate()
 
