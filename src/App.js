@@ -7,6 +7,8 @@ import CustomerList from "./pagesMUI/customers/CustomerList"
 import DashboardLayout from "./layout/DashboardLayout"
 import CounterSample from "./stateSamples/CounterSample"
 import Favorites from "./pagesMUI/Favorites"
+import AddCustomer from "./pagesMUI/customers/AddCustomer"
+import Todos from "./pages/tofos/Todos"
 
 
 
@@ -23,6 +25,8 @@ function App() {
         <Route path="/products/update/:id" element={<Update />} />
         <Route path="/products/add" element={<Add />} />
         <Route path="/customers" element={<CustomerList />} />
+        <Route path="/customers/add" element={<AddCustomer />} />
+        <Route path="/todos" element={<Todos />} />
         <Route path="/favorites" element={<Favorites />} />
 
         <Route path="*" element={<NotFound />} />
