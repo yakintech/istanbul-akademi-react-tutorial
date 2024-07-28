@@ -9,11 +9,12 @@ import CounterSample from "./stateSamples/CounterSample"
 import Favorites from "./pagesMUI/Favorites"
 import AddCustomer from "./pagesMUI/customers/AddCustomer"
 import Todos from "./pages/tofos/Todos"
+import { useState } from "react"
+import Posts from "./pages/post/Posts"
 
 
 
 function App() {
-
 
 
   return <>
@@ -28,6 +29,7 @@ function App() {
         <Route path="/customers/add" element={<AddCustomer />} />
         <Route path="/todos" element={<Todos />} />
         <Route path="/favorites" element={<Favorites />} />
+        <Route path="/posts" element={<Posts/>} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>
