@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import useTodos from '../../hooks/useTodos'
+import { CounterContext } from '../../context/CounterContext'
+import { Button } from '@mui/material'
 
 function Todos() {
 
     const { todos, loading, error } = useTodos()
 
+
+    const { increaseCounter } = useContext(CounterContext)
+
+
     return <>
-        <p style={{color:"red"}}>{error.message}</p>
+        <Button onClick={increaseCounter} variant="contained" color="primary">Increment</Button>
+        <p style={{ color: "red" }}>{error.message}</p>
         <h1>Todos</h1>
         <hr />
         {

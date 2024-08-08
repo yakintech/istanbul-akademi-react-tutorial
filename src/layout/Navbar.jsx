@@ -16,6 +16,7 @@ function Navbar() {
         <Link style={{ color: "white", textDecoration: "none" }} to="/customers"><Typography variant="h5">Customers</Typography></Link>
         <Link style={{ color: "white", textDecoration: "none" }} to="/todos"><Typography variant="h5">Todos</Typography></Link>
         <Link style={{ color: "white", textDecoration: "none" }} to="/posts"><Typography variant="h5">Posts</Typography></Link>
+        <Link style={{ color: "white", textDecoration: "none" }} to="/counter"><Typography variant="h5">Counter</Typography></Link>
 
       </Stack>
     </AppBar>

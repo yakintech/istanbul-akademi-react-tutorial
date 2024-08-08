@@ -5,12 +5,12 @@ import Add from "./pagesMUI/products/Add"
 import Update from "./pagesMUI/products/Update"
 import CustomerList from "./pagesMUI/customers/CustomerList"
 import DashboardLayout from "./layout/DashboardLayout"
-import CounterSample from "./stateSamples/CounterSample"
 import Favorites from "./pagesMUI/Favorites"
 import AddCustomer from "./pagesMUI/customers/AddCustomer"
 import Todos from "./pages/tofos/Todos"
-import { useState } from "react"
 import Posts from "./pages/post/Posts"
+import CounterSample from "./pages/CounterSample"
+
 
 
 
@@ -30,14 +30,11 @@ function App() {
         <Route path="/todos" element={<Todos />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/posts" element={<Posts/>} />
+        <Route path="/counter" element={<CounterSample />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>
     </DashboardLayout>
-
-
-
-
 
   </>
 

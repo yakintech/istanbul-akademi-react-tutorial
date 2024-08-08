@@ -6,6 +6,7 @@ import './style.css'
 import { SnackbarProvider } from 'notistack';
 import { FavoritesProvider } from './context/FavoritesContext';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { CounterProvider } from './context/CounterContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -13,15 +14,20 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 export const queryClient = new QueryClient()
 
 root.render(
+
   <QueryClientProvider client={queryClient}>
     <BrowserRouter>
-      <FavoritesProvider>
-        <SnackbarProvider>
-          <App />
-        </SnackbarProvider>
-      </FavoritesProvider>
+      <CounterProvider>
+        <FavoritesProvider>
+          <SnackbarProvider>
+            <App />
+          </SnackbarProvider>
+        </FavoritesProvider>
+      </CounterProvider>
     </BrowserRouter>
   </QueryClientProvider>
+
+
 
 );
 
